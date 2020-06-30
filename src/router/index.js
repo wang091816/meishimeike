@@ -6,9 +6,7 @@ const Cepingjilu = resolve => require(["../components/cepingjilu"], resolve);
 const Cuotilianxi = resolve => require(["../components/cuotilianxi"], resolve);
 const Dengluzhuce = resolve => require(["../components/dengluzhuce"], resolve);
 const Fengzhenmokao = resolve => require(["../components/fengzhenmokao"], resolve);
-const Jingpinkecheng = resolve => require(["../components/jingpinkecheng"], resolve);
 const Lanxinfeng = resolve => require(["../components/lanxinfeng"], resolve);
-const Mingshizhenrong = resolve => require(["../components/mingshizhenrong"], resolve);
 const Kaodianlianxi = resolve => require(["../components/kaodianlianxi"], resolve);
 const Kecheng = resolve => require(["../components/kecheng"], resolve);
 const Taojuanlianxi = resolve => require(["../components/taojuanlianxi"], resolve);
@@ -20,6 +18,9 @@ const Yuduiyifudao = resolve => require(["../components/yiduiyifudao"], resolve)
 const Yuekejilu = resolve => require(["../components/yuekejilu"], resolve);
 const Lianxi = resolve => require(["../components/lianxi"], resolve);
 const Kechengxingqing = resolve => require(["../components/kechengxingqing"], resolve);
+const Jiangshixingqing = resolve => require(["../components/jingshixingqing"], resolve);
+const Yuyuekecheng = resolve => require(["../components/yuyuekecheng"], resolve);
+const Querendingdan = resolve => require(["../components/querendingdan"], resolve);
 Vue.use(VueRouter)
 
 
@@ -57,19 +58,9 @@ Vue.use(VueRouter)
     component:Fengzhenmokao
   },
   {
-    path: '/Jingpinkecheng',
-    name:"Jingpinkecheng",
-    component:Jingpinkecheng
-  },
-  {
     path: '/Lanxinfeng',
     name:"Lanxinfeng",
     component:Lanxinfeng
-  },
-  {
-    path: '/Mingshizhenrong',
-    name:"Mingshizhenrong",
-    component:Mingshizhenrong
   },
   {
     path: '/Kaodianlianxi',
@@ -125,6 +116,21 @@ Vue.use(VueRouter)
     path: '/Kechengxingqing',
     name:"Kechengxingqing",
     component:Kechengxingqing
+  },
+  {
+    path: '/Jiangshixingqing',
+    name:"Jiangshixingqing",
+    component:Jiangshixingqing
+  },
+  {
+    path: '/Yuyuekecheng',
+    name:"Yuyuekecheng",
+    component:Yuyuekecheng
+  },
+  {
+    path: '/Querendingdan',
+    name:"Querendingdan",
+    component:Querendingdan
   },
 ]
 const router = new VueRouter({
