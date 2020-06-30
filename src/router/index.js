@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-const Holloworld = resolve => require(["../components/HelloWorld"], resolve);
 const Shouye = resolve => require(["../components/shouye"], resolve);
 const Cepingjilu = resolve => require(["../components/cepingjilu"], resolve);
 const Cuotilianxi = resolve => require(["../components/cuotilianxi"], resolve);
@@ -24,15 +23,9 @@ Vue.use(VueRouter)
 
 
 
-
   const routes = [
   {
     path: '/',
-    name:"Holloworld",
-    component:Holloworld
-  },
-  {
-    path: '/Shouye',
     name:"Shouye",
     component:Shouye
   },
