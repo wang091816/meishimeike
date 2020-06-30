@@ -8,7 +8,6 @@ const Dengluzhuce = resolve => require(["../components/dengluzhuce"], resolve);
 const Fengzhenmokao = resolve => require(["../components/fengzhenmokao"], resolve);
 const Lanxinfeng = resolve => require(["../components/lanxinfeng"], resolve);
 const Kaodianlianxi = resolve => require(["../components/kaodianlianxi"], resolve);
-const Kecheng = resolve => require(["../components/kecheng"], resolve);
 const Taojuanlianxi = resolve => require(["../components/taojuanlianxi"], resolve);
 const Teseke = resolve => require(["../components/teseke"], resolve);
 const Wode = resolve => require(["../components/wode"], resolve);
@@ -66,11 +65,6 @@ Vue.use(VueRouter)
     path: '/Kaodianlianxi',
     name:"Kaodianlianxi",
     component:Kaodianlianxi
-  },
-  {
-    path: '/Kecheng',
-    name:"Kecheng",
-    component:Kecheng
   },
   {
     path: '/Taojuanlianxi',
