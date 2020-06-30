@@ -1,8 +1,7 @@
 <template>
-  <div class="hello">
-    
-       <router-link :to="{name:'Shouye'}"><div>我是默认页面</div></router-link>
-  </div>
+      <div class="div1">
+        
+      </div>
 </template>
 
 <script>
