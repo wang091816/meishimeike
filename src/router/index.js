@@ -17,7 +17,7 @@ const Yuduiyifudao = resolve => require(["../components/yiduiyifudao"], resolve)
 const Yuekejilu = resolve => require(["../components/yuekejilu"], resolve);
 const Lianxi = resolve => require(["../components/lianxi"], resolve);
 const Kechengxingqing = resolve => require(["../components/kechengxingqing"], resolve);
-const Jiangshixingqing = resolve => require(["../components/jingshixingqing"], resolve);
+const Jiangshixingqing = resolve => require(["../components/jiangshixingqing"], resolve);
 const Yuyuekecheng = resolve => require(["../components/yuyuekecheng"], resolve);
 const Querendingdan = resolve => require(["../components/querendingdan"], resolve);
 Vue.use(VueRouter)
