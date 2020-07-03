@@ -1,0 +1,28 @@
+{
+    "lianxi_one":[
+        {
+            "img":"/images/lianxi_01.png",
+            "title":"考点专练"
+        },
+        {
+            "img":"/images/lianxi_02.png",
+            "title":"套卷练习"
+        },
+        {
+            "img":"/images/lianxi_03.png",
+            "title":"仿真模考"
+        },
+        {
+            "img":"/images/lianxi_04.png",
+            "title":"错题练习"
+        },
+        {
+            "img":"/images/lianxi_05.png",
+            "title":"测评记录"
+        },
+        {
+            "img":"/images/lianxi_06.png",
+            "title":"习题收藏"
+        }
+    ]
+}
