@@ -96,7 +96,8 @@ const routes = [
     path: '/Kecheng',
     name:"Kecheng",
     meta:{
-      title:'特色课'
+      title:'特色课',
+      footer:true
     },
     component:Kecheng
   },
