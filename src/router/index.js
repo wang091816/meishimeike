@@ -57,6 +57,7 @@ const routes = [
     name: "Shouye",
     meta: {
       title: '每时每刻',
+      footer:true
     },
     component: Shouye
   },
@@ -128,7 +129,8 @@ const routes = [
     path: '/Wode',
     name: "Wode",
     meta: {
-      title: '我的'
+      title: '我的',
+      footer:true
     },
     component: Wode
   },
@@ -247,36 +249,57 @@ const routes = [
   {
     path: '/Cardsconvert',
     name: "Cardsconvert",
+    meta: {
+      title: '学习卡兑换'
+    },
     component: Cardsconvert
   },
   {
     path: '/Vip',
     name: "Vip",
+    meta: {
+      title: '会员'
+    },
     component: Vip
   },
   {
     path: '/News',
     name: "News",
+    meta: {
+      title: '消息中心'
+    },
     component: News
   },
   {
     path: '/Feedback',
     name: "Feedback",
+    meta: {
+      title: '意见反馈'
+    },
     component: Feedback
   },
   {
     path: '/Service',
     name: "Service",
+    meta: {
+      title: '在线客服'
+    },
     component: Service
   },
   {
     path: '/Options',
     name: "Options",
+    meta: {
+      title: '设置'
+    },
     component: Options
   },
   {
     path: '/Optionscode',
     name: "Optionscode",
+    meta: {
+      title: '设置密码'
+    },
     component: Optionscode
   },
   {
@@ -307,7 +330,8 @@ const routes = [
     path: '/Yuekejilu',
     name: "Yuekejilu",
     meta: {
-      title: '约课记录'
+      title: '约课记录',
+      footer:true
     },
     component: Yuekejilu
   },
@@ -315,7 +339,8 @@ const routes = [
     path: '/Lianxi',
     name: "Lianxi",
     meta: {
-      title: '练习'
+      title: '练习',
+      footer:true
     },
     component: Lianxi
   },
@@ -354,20 +379,33 @@ const routes = [
   {
     path: '/keCheng',
     name: "KeCheng",
+    meta: {
+      title: '特色课',
+      footer:true
+    },
     component: KeCheng
   },
   {
     path: '/screemn',
     name: "Screemn",
+    meta: {
+      title: '搜索'
+    },
     component: Screemn
   },
   {
     path: '/particulars',
     name: "Particulars",
+    meta: {
+      title: '课程详情'
+    },
     component: Particulars
   },
   {
     path: '/hint',
+    meta: {
+      title: '蓝色小信封'
+    },
     name: "Hint",
     component: Hint
   },
