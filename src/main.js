@@ -6,11 +6,17 @@ import YDUI from 'vue-ydui';
 import 'vue-ydui/dist/ydui.rem.css';
 import Vant from 'vant';
 import 'vant/lib/index.css';
+<<<<<<< HEAD
+=======
+import axios from 'axios'
+>>>>>>> f59da9b43fb959360a4724e9b5d745c6eafa3c37
 
 Vue.use(Vant);
 Vue.use(YDUI);
 
+
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 new Vue({
   router,
