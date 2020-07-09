@@ -6,6 +6,7 @@ import YDUI from 'vue-ydui';
 import 'vue-ydui/dist/ydui.rem.css';
 import Vant from 'vant';
 import 'vant/lib/index.css';
+
 import axios from 'axios'
 
 Vue.use(Vant);

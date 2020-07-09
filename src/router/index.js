@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import KeCheng from '../components/KeCheng.vue'
+import Screemn from '../components/Screemn.vue'
+import Particulars from '../components/Particulars.vue'
+import Hint from '../components/Hint.vue'
 const Shouye = resolve => require(["../components/shouye"], resolve);
 const Cepingjilu = resolve => require(["../components/cepingjilu"], resolve);
 const Cuotilianxi = resolve => require(["../components/cuotilianxi"], resolve);
@@ -304,6 +308,26 @@ Vue.use(VueRouter)
       title:'确认订单'
     },
     component:Querendingdan
+  },
+  {
+    path: '/keCheng',
+    name:"KeCheng",
+    component:KeCheng
+  },
+  {
+    path: '/screemn',
+    name:"Screemn",
+    component:Screemn
+  },
+  {
+    path: '/particulars',
+    name:"Particulars",
+    component:Particulars
+  },
+  {
+    path: '/hint',
+    name:"Hint",
+    component:Hint
   },
 ]
 const router = new VueRouter({
