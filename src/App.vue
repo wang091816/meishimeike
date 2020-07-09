@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <router-view />
-    <van-tabbar route inactive-color="#b7b7b7" active-color="#ff882e" v-show="this.$route.meta.footer">
+    <van-tabbar
+      route
+      inactive-color="#b7b7b7"
+      active-color="#ff882e"
+      v-show="this.$route.meta.footer"
+    >
       <van-tabbar-item replace to="/">
         <template #icon>
           <span class="iconfont icon-xuewei"></span>
@@ -33,12 +38,19 @@
         <small>我的</small>
       </van-tabbar-item>
     </van-tabbar>
+    <!-- 蓝色信封 -->
+    <div class="blue" v-on:click="hint"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  methods: {
+    hint() {
+      this.$router.push("/hint");
+    }
+  }
 };
 </script>
 
@@ -49,5 +61,17 @@ export default {
 .van-tabbar small {
   font-size: 0.6rem;
   color: #000;
+}
+.blue {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 5rem;
+  background-color: #007aff;
+  background-image: url("https://static.meiqia.com/widget/static/icon-mq-round@2x.png");
+  background-position: 4rem;
+  /* background-size: 10rem */
 }
 </style>
