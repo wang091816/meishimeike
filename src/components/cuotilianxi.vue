@@ -36,7 +36,7 @@ export default Vue.extend({
 <style scoped lang="scss">
 .taojuanlianxi{
  background: #fff;
- height: 92.5vh;
+ height: 100vh;
 }
 .lianxi_empty{
   display: flex;

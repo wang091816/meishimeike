@@ -20,7 +20,7 @@
         <p v-for="(two,index) in navs" :key="index" v-show="two.pid == sel">
           <span>{{two.classify_name}}</span>
           <br />
-          <span v-if="isShow">{{two.bank}}</span>
+          <span>{{two.bank}}</span>
         </p>
       </div>
     </div>
@@ -36,7 +36,6 @@ export default Vue.extend({
       value: "",
       navs: [],
       sel: 1,
-      isShow: false
     };
   },
   mounted() {
@@ -68,7 +67,7 @@ export default Vue.extend({
 }
 .kaodianlianxi_nav {
   display: flex;
-  height: 78vh;
+  height: 85vh;
   color: #595959;
   .kaodianlianxi_nav_left {
     flex: 1;
