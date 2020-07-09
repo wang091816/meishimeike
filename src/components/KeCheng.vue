@@ -35,7 +35,6 @@
                 </div>
             </div>
         </div>
-        <!-- 蓝色信封 -->
         <div class="blue" v-on:click="hint">
             
         </div>
@@ -75,7 +74,6 @@ export default {
     },
     mounted(){
         axios.get("http://localhost:8080/List.json").then((response)=>{
-            window.console.log(response.data)
             this.list = response.data
         }).catch((error)=>{
             window.console.log(error)
