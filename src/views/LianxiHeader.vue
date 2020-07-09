@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar class="lianxiHeader" :title="title" @click-left="onClickLeft">
+    <van-nav-bar class="lianxiHeader" :title="title" @click-left="onClickLeft" @click-right="onClickRight">
       <template #left>
         <van-icon name="arrow-left" size="20" />
       </template>
@@ -17,6 +17,9 @@ export default {
   methods: {
     onClickLeft() {
       this.$router.go(-1);
+    },
+    onClickRight(){
+      this.$router.push('Screemn')
     }
   }
 };

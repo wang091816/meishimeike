@@ -20,6 +20,8 @@ const Yuyuekecheng = resolve => require(["../components/yuyuekecheng"], resolve)
 const Querendingdan = resolve => require(["../components/querendingdan"], resolve);
 const Kecheng = resolve => require(["../components/KeCheng"], resolve);
 const Particulars = resolve => require(["../components/Particulars"], resolve);
+const Hint = resolve => require(["../components/Hint"], resolve);
+const Screemn = resolve => require(["../components/Screemn"], resolve);
 
 import Message from "@/components/wode/Message"
 import Nickname from "@/components/wode/Message/Nickname"
@@ -48,30 +50,31 @@ Vue.use(VueRouter)
 
 
 
-  const routes = [
+const routes = [
   {
     path: '/',
-    name:"Shouye",
-    meta:{
-      title:'每时每刻',
+    name: "Shouye",
+    meta: {
+      title: '每时每刻',
+      footer:true
     },
-    component:Shouye
+    component: Shouye
   },
   {
     path: '/Cepingjilu',
-    name:"Cepingjilu",
-    meta:{
-      title:'测评记录'
+    name: "Cepingjilu",
+    meta: {
+      title: '测评记录'
     },
-    component:Cepingjilu
+    component: Cepingjilu
   },
   {
     path: '/Cuotilianxi',
-    name:"Cuotilianxi",
-    meta:{
-      title:'错题练习'
+    name: "Cuotilianxi",
+    meta: {
+      title: '错题练习'
     },
-    component:Cuotilianxi
+    component: Cuotilianxi
   },
   {
     path: '/Particulars',
@@ -83,11 +86,11 @@ Vue.use(VueRouter)
   },
   {
     path: '/Dengluzhuce',
-    name:"Dengluzhuce",
-    meta:{
-      title:'登陆注册'
+    name: "Dengluzhuce",
+    meta: {
+      title: '登陆注册'
     },
-    component:Dengluzhuce
+    component: Dengluzhuce
   },
   {
     path: '/Kecheng',
@@ -99,220 +102,310 @@ Vue.use(VueRouter)
   },
   {
     path: '/Fengzhenmokao',
-    name:"Fengzhenmokao",
-    meta:{
-      title:'仿真模考'
+    name: "Fengzhenmokao",
+    meta: {
+      title: '仿真模考'
     },
-    component:Fengzhenmokao
+    component: Fengzhenmokao
   },
   {
     path: '/Lanxinfeng',
-    name:"Lanxinfeng",
-    meta:{
-      title:'蓝信封'
+    name: "Lanxinfeng",
+    meta: {
+      title: '蓝信封'
     },
-    component:Lanxinfeng
+    component: Lanxinfeng
   },
   {
     path: '/Kaodianlianxi',
-    name:"Kaodianlianxi",
-    meta:{
-      title:'考点专练'
+    name: "Kaodianlianxi",
+    meta: {
+      title: '考点专练'
     },
-    component:Kaodianlianxi
+    component: Kaodianlianxi
   },
   {
     path: '/Taojuanlianxi',
-    name:"Taojuanlianxi",
-    meta:{
-      title:'套卷练习'
+    name: "Taojuanlianxi",
+    meta: {
+      title: '套卷练习'
     },
-    component:Taojuanlianxi
+    component: Taojuanlianxi
   },
   {
     path: '/Teseke',
-    name:"Teseke",
-    meta:{
-      title:'特色课'
+    name: "Teseke",
+    meta: {
+      title: '特色课'
     },
-    component:Teseke
+    component: Teseke
   },
   {
     path: '/Wode',
-    name:"Wode",
-    meta:{
-      title:'我的'
+    name: "Wode",
+    meta: {
+      title: '我的',
+      footer:true
     },
-    component:Wode
+    component: Wode
   },
   {
     path: '/Message',
-    name:"Message",
-    component:Message
+    name: "Message",
+    meta: {
+      title: '个人信息'
+    },
+    component: Message
   },
   {
     path: '/Nickname',
-    name:"Nickname",
-    component:Nickname
+    name: "Nickname",
+    meta: {
+      title: '修改昵称'
+    },
+    component: Nickname
   },
   {
     path: '/Sex',
-    name:"Sex",
-    component:Sex
+    name: "Sex",
+    meta: {
+      title: '修改性别'
+    },
+    component: Sex
   },
   {
     path: '/Subject',
-    name:"Subject",
-    component:Subject
+    name: "Subject",
+    meta: {
+      title: '修改学科'
+    },
+    component: Subject
   },
   {
     path: '/Study',
-    name:"Study",
-    component:Study
+    name: "Study",
+    meta: {
+      title: '我的学习'
+    },
+    component: Study
   },
   {
     path: '/Balance',
-    name:"Balance",
-    component:Balance
+    name: "Balance",
+    meta: {
+      title: '我的余额'
+    },
+    component: Balance
   },
   {
     path: '/Balancedetail',
-    name:"Balancedetail",
-    component:Balancedetail
+    name: "Balancedetail",
+    meta: {
+      title: '我的余额'
+    },
+    component: Balancedetail
   },
   {
     path: '/Attention',
-    name:"Attention",
-    component:Attention
+    name: "Attention",
+    meta: {
+      title: '我的关注'
+    },
+    component: Attention
   },
   {
     path: '/Collect',
-    name:"Collect",
-    component:Collect
+    name: "Collect",
+    meta: {
+      title: '我的收藏'
+    },
+    component: Collect
   },
   {
     path: '/Course',
-    name:"Course",
-    component:Course
+    name: "Course",
+    meta: {
+      title: '订单'
+    },
+    component: Course
   },
   {
     path: '/Member',
-    name:"Member",
-    component:Member
+    name: "Member",
+    meta: {
+      title: '订单'
+    },
+    component: Member
   },
   {
     path: '/Invite',
-    name:"Invite",
-    component:Invite
+    name: "Invite",
+    meta: {
+      title: '订单'
+    },
+    component: Invite
   },
   {
     path: '/Coupon',
-    name:"Coupon",
-    component:Coupon
+    name: "Coupon",
+    meta: {
+      title: '优惠券'
+    },
+    component: Coupon
   },
   {
     path: '/Cards',
-    name:"Cards",
-    component:Cards
+    name: "Cards",
+    meta: {
+      title: '学习卡'
+    },
+    component: Cards
   },
   {
     path: '/Cardsconvert',
-    name:"Cardsconvert",
-    component:Cardsconvert
+    name: "Cardsconvert",
+    meta: {
+      title: '学习卡兑换'
+    },
+    component: Cardsconvert
   },
   {
     path: '/Vip',
-    name:"Vip",
-    component:Vip
+    name: "Vip",
+    meta: {
+      title: '会员'
+    },
+    component: Vip
   },
   {
     path: '/News',
-    name:"News",
-    component:News
+    name: "News",
+    meta: {
+      title: '消息中心'
+    },
+    component: News
   },
   {
     path: '/Feedback',
-    name:"Feedback",
-    component:Feedback
+    name: "Feedback",
+    meta: {
+      title: '意见反馈'
+    },
+    component: Feedback
   },
   {
     path: '/Service',
-    name:"Service",
-    component:Service
+    name: "Service",
+    meta: {
+      title: '在线客服'
+    },
+    component: Service
   },
   {
     path: '/Options',
-    name:"Options",
-    component:Options
+    name: "Options",
+    meta: {
+      title: '设置'
+    },
+    component: Options
   },
   {
     path: '/Optionscode',
-    name:"Optionscode",
-    component:Optionscode
+    name: "Optionscode",
+    meta: {
+      title: '设置密码'
+    },
+    component: Optionscode
   },
   {
     path: '/Xitishouceng',
-    name:"Xitishouceng",
-    meta:{
-      title:'习题收藏'
+    name: "Xitishouceng",
+    meta: {
+      title: '习题收藏'
     },
-    component:Xitishouceng
+    component: Xitishouceng
   },
   {
     path: '/Xuexirili',
-    name:"Xuexirili",
-    meta:{
-      title:'学习日历'
+    name: "Xuexirili",
+    meta: {
+      title: '学习日历'
     },
-    component:Xuexirili
+    component: Xuexirili
   },
   {
     path: '/Yuduiyifudao',
-    name:"Yuduiyifudao",
-    meta:{
-      title:'一对一辅导'
+    name: "Yuduiyifudao",
+    meta: {
+      title: '一对一辅导'
     },
-    component:Yuduiyifudao
+    component: Yuduiyifudao
   },
   {
     path: '/Yuekejilu',
-    name:"Yuekejilu",
-    meta:{
-      title:'约课记录'
+    name: "Yuekejilu",
+    meta: {
+      title: '约课记录',
+      footer:true
     },
-    component:Yuekejilu
+    component: Yuekejilu
   },
   {
     path: '/Lianxi',
-    name:"Lianxi",
-    meta:{
-      title:'练习'
+    name: "Lianxi",
+    meta: {
+      title: '练习',
+      footer:true
     },
-    component:Lianxi
+    component: Lianxi
   },
   {
     path: '/Jiangshixingqing',
-    name:"Jiangshixingqing",
-    meta:{
-      title:'讲师详情'
+    name: "Jiangshixingqing",
+    meta: {
+      title: '讲师详情'
     },
-    component:Jiangshixingqing
+    component: Jiangshixingqing
   },
   {
     path: '/Yuyuekecheng',
-    name:"Yuyuekecheng",
-    meta:{
-      title:'预约课程'
+    name: "Yuyuekecheng",
+    meta: {
+      title: '预约课程'
     },
-    component:Yuyuekecheng
+    component: Yuyuekecheng
   },
   {
     path: '/Querendingdan',
-    name:"Querendingdan",
-    meta:{
-      title:'确认订单'
+    name: "Querendingdan",
+    meta: {
+      title: '确认订单'
     },
-    component:Querendingdan
+    component: Querendingdan
+  },
+  {
+    path: '/screemn',
+    name: "Screemn",
+    meta: {
+      title: '搜索'
+    },
+    component: Screemn
+  },
+  {
+    path: '/particulars',
+    name: "Particulars",
+    meta: {
+      title: '课程详情'
+    },
+    component: Particulars
+  },
+  {
+    path: '/hint',
+    meta: {
+      title: '蓝色小信封'
+    },
+    name: "Hint",
+    component: Hint
   },
 ]
 const router = new VueRouter({
@@ -321,7 +414,7 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to,from,next)=>{
+router.beforeEach((to, from, next) => {
   document.title = to.meta.title
   next()
 })

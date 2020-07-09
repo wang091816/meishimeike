@@ -1,7 +1,7 @@
-z<template>
+<template>
   <div id="app">
     <router-view />
-    <van-tabbar route inactive-color="#b7b7b7" active-color="#ff882e">
+    <van-tabbar route inactive-color="#b7b7b7" active-color="#ff882e" v-show="this.$route.meta.footer">
       <van-tabbar-item replace to="/">
         <template #icon>
           <span class="iconfont icon-xuewei"></span>
