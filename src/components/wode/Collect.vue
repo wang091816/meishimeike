@@ -1,10 +1,11 @@
 <template>
-    <div id="dengluzhuce">
+    <div id="Collect">
         <van-nav-bar
-        title="登录注册"
+        title="我的收藏"
         left-arrow
         @click-left="onClickLeft"
         />
+        <van-empty description="暂无收藏" />
     </div>
 </template>
 
@@ -12,7 +13,7 @@
     import Vue from 'vue'
 
     export default Vue.extend({
-        name: "dengluzhuce",
+        name: "Collect",
         methods: {
             onClickLeft() {
                 // 返回上一级

@@ -1,9 +1,11 @@
 <template>
-    <div id="dengluzhuce">
+    <div id="Balance">
         <van-nav-bar
-        title="登录注册"
+        title="我的余额"
         left-arrow
+        right-text="余额明细"
         @click-left="onClickLeft"
+        @click-right="onClickRight"
         />
     </div>
 </template>
@@ -12,11 +14,14 @@
     import Vue from 'vue'
 
     export default Vue.extend({
-        name: "dengluzhuce",
+        name: "Balance",
         methods: {
             onClickLeft() {
                 // 返回上一级
                 this.$router.go(-1)
+            },
+            onClickRight(){
+                this.$router.push("/Balancedetail")
             }
         },
     })

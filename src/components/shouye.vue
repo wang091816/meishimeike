@@ -142,9 +142,6 @@
 </script>
 
 <style scoped >
-.div1{
-   
-}
   .div2{
       width: 100%;
       height: 13rem;
