@@ -1,9 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import KeCheng from '../components/KeCheng.vue'
-import Screemn from '../components/Screemn.vue'
-import Particulars from '../components/Particulars.vue'
-import Hint from '../components/Hint.vue'
 const Shouye = resolve => require(["../components/shouye"], resolve);
 const Cepingjilu = resolve => require(["../components/cepingjilu"], resolve);
 const Cuotilianxi = resolve => require(["../components/cuotilianxi"], resolve);
@@ -19,10 +15,13 @@ const Xuexirili = resolve => require(["../components/xuexirili"], resolve);
 const Yuduiyifudao = resolve => require(["../components/yiduiyifudao"], resolve);
 const Yuekejilu = resolve => require(["../components/yuekejilu"], resolve);
 const Lianxi = resolve => require(["../components/lianxi"], resolve);
-const Kechengxingqing = resolve => require(["../components/kechengxingqing"], resolve);
 const Jiangshixingqing = resolve => require(["../components/jiangshixingqing"], resolve);
 const Yuyuekecheng = resolve => require(["../components/yuyuekecheng"], resolve);
 const Querendingdan = resolve => require(["../components/querendingdan"], resolve);
+const Kecheng = resolve => require(["../components/KeCheng"], resolve);
+const Particulars = resolve => require(["../components/Particulars"], resolve);
+const Hint = resolve => require(["../components/Hint"], resolve);
+const Screemn = resolve => require(["../components/Screemn"], resolve);
 
 import Message from "@/components/wode/Message"
 import Nickname from "@/components/wode/Message/Nickname"
@@ -78,12 +77,28 @@ const routes = [
     component: Cuotilianxi
   },
   {
+    path: '/Particulars',
+    name:"Particulars",
+    meta:{
+      title:'课程详情'
+    },
+    component:Particulars
+  },
+  {
     path: '/Dengluzhuce',
     name: "Dengluzhuce",
     meta: {
       title: '登陆注册'
     },
     component: Dengluzhuce
+  },
+  {
+    path: '/Kecheng',
+    name:"Kecheng",
+    meta:{
+      title:'特色课'
+    },
+    component:Kecheng
   },
   {
     path: '/Fengzhenmokao',
@@ -345,14 +360,6 @@ const routes = [
     component: Lianxi
   },
   {
-    path: '/Kechengxingqing',
-    name: "Kechengxingqing",
-    meta: {
-      title: '课程详情'
-    },
-    component: Kechengxingqing
-  },
-  {
     path: '/Jiangshixingqing',
     name: "Jiangshixingqing",
     meta: {
@@ -375,15 +382,6 @@ const routes = [
       title: '确认订单'
     },
     component: Querendingdan
-  },
-  {
-    path: '/keCheng',
-    name: "KeCheng",
-    meta: {
-      title: '特色课',
-      footer:true
-    },
-    component: KeCheng
   },
   {
     path: '/screemn',
