@@ -38,6 +38,99 @@
              <div class="div5-1"></div>
              <b><div class="p1"><span>精品课程</span></div></b>
          </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div5">
+             <div class="div5-1"></div>
+             <b><div class="p1"><span>推荐课程</span></div></b>
+         </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div7">
+            <div class="div7-1">
+                <p class="div7-p1">随便写的东西随便写的东西随便写的东西随便写的东西随便写的东西</p>
+                <p>共1课时</p>
+                <img src="../assets/img/A_03.jpg" alt="" class="img4">
+                <p class="div7-p2">这里是名字</p>
+                <p class="div7-p3">多少人已经报名</p>
+                <p class="div7-p4">免费</p>
+            </div>
+         </div>
+         <div class="div5">
+             <div class="div5-1"></div>
+             <b><div class="p1"><span>推荐讲师</span></div></b>
+         </div>
+          <div class="div6">
+            <img src="../assets/img/A_03.jpg" alt="" class="img3">
+            <div class="div6-1">这里是名字</div>
+            <div class="div6-2">这里是简述</div>
+         </div>
+          <div class="div6">
+            <img src="../assets/img/A_03.jpg" alt="" class="img3">
+            <div class="div6-1">这里是名字</div>
+            <div class="div6-2">这里是简述</div>
+         </div>
+          <div class="div6">
+            <img src="../assets/img/A_03.jpg" alt="" class="img3">
+            <div class="div6-1">这里是名字</div>
+            <div class="div6-2">这里是简述</div>
+         </div>
+          <div class="div6">
+            <img src="../assets/img/A_03.jpg" alt="" class="img3">
+            <div class="div6-1">这里是名字</div>
+            <div class="div6-2">这里是简述</div>
+         </div>
+          <div class="div6">
+            <img src="../assets/img/A_03.jpg" alt="" class="img3">
+            <div class="div6-1">这里是名字</div>
+            <div class="div6-2">这里是简述</div>
+         </div>
     </div>
 </template>
 
@@ -114,6 +207,43 @@
   }
   .div6-2{
        margin-left:6rem;
-     
+  }
+  .div7{
+      margin-top: 1rem;
+      width: 90%;
+      height: 10rem;
+      background: white;
+      margin-left: 5%;
+      border-radius:5%; 
+  } 
+  .div7-1{
+      position: absolute;
+      width: 80%;
+      margin-left: 5%;
+      margin-top: 1rem;
+  }
+  .div7-p1{
+     font-size: 1rem;
+  }
+  .img4{
+     width: 1.5rem;
+      height: 1.5rem;
+      border-radius:50%;  
+      margin-left:0.5rem;
+      margin-top:1rem;  
+  }
+  .div7-p2{
+      margin-left: 3rem;
+      margin-top: -1.5rem;
+      position: relative;
+  }
+  .div7-p3{
+     margin-top: 1rem;
+  }
+   .div7-p4{
+     margin-top: -1rem;
+      margin-left: 16rem;
+      font-size: 1rem;
+      color: lawngreen;
   }
 </style>
