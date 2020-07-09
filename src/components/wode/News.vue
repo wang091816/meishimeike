@@ -1,7 +1,7 @@
 <template>
-    <div id="dengluzhuce">
+    <div id="News">
         <van-nav-bar
-        title="登录注册"
+        title="消息通知"
         left-arrow
         @click-left="onClickLeft"
         />
@@ -12,7 +12,7 @@
     import Vue from 'vue'
 
     export default Vue.extend({
-        name: "dengluzhuce",
+        name: "News",
         methods: {
             onClickLeft() {
                 // 返回上一级

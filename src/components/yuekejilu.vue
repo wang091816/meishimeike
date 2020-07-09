@@ -1,6 +1,8 @@
 <template>
-    <div>
-
+    <div id="yuekejilu">
+        <van-nav-bar
+        title="约课记录"
+        />
     </div>
 </template>
 
@@ -8,10 +10,8 @@
     import Vue from 'vue'
 
     export default Vue.extend({
-        
+        name: "yuekejilu"
     })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped lang="scss"></style>
